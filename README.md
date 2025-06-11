@@ -45,19 +45,6 @@ The Direct Messaging Service is a web-based application that allows users to cre
    - Click “End Session” in the sidebar to delete the chat data and clear localStorage.
    - This removes the associated files from `storageFiles/` and `generatedInterface/`.
 
-## Project Structure
-Main/
-├── centralProcessing/
-│   ├── processor.php        # Handles message storage and dynamic chat page generation
-│   ├── deleteChat.php       # Deletes chat session files
-│   └── script.js            # Frontend logic for chat interactions
-├── CSS/
-│   └── style.css            # Styles for the application
-├── generatedInterface/       # Stores dynamically generated chat pages
-├── storageFiles/            # Stores chat message data
-├── index.php                # Main entry point for the application
-└── index_Script.js          # Frontend logic for index.php
-
 ## Key Files
 - **`processor.php`**: Processes user messages, appends them to storage files, and generates chat interface files dynamically.
 - **`deleteChat.php`**: Handles session deletion by removing chat files and redirecting to `index.php`.
